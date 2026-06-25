@@ -195,43 +195,62 @@ input:invalid, textarea:invalid
 
 @media (max-width: 768px) 
 {
-  main 
-  {
-    width: 92%;
-    margin: 20px auto;
-    padding: 20px;
+  
+  main {
+    width: 95% !important;
+    max-width: 100%;
+    margin: 20px auto !important;
+    padding: 15px !important;
+    box-sizing: border-box;
   }
 
   .home-main 
   {
-    flex-direction: column;
-    text-align: center;
-    gap: 25px;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 20px !important;
+  }
+
+  .home-main div 
+  {
+    width: 100% !important;
   }
 
   .home-main .foto-perfil 
   {
-    width: 220px;  
-    height: 220px;
-    margin-bottom: 0;
-  }
-
-  header 
-  {
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px;
-    text-align: center;
-  }
-
-  header ul 
-  {
-    gap: 15px;
+    width: 200px !important;
+    height: 200px !important;
+    margin: 0 auto 15px auto !important;
+    flex-shrink: 0 !important;
   }
 
   .galeria-projetos 
   {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr !important; 
+    gap: 15px !important;
+    width: 100% !important;
+  }
+
+  .card-projeto 
+  {
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  header 
+  {
+    flex-direction: column !important;
+    gap: 10px !important;
+    padding: 15px !important;
+    text-align: center !important;
+    width: 100% !important;
+  }
+
+  header ul 
+  {
+    justify-content: center !important;
+    padding: 0 !important;
   }
 }
